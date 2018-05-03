@@ -17,7 +17,8 @@ WHERE "username" LIKE '%a%';
 
 -- Select all users that have attempted 9 or more transactions.
 
-
+SELECT * FROM "accounts"
+WHERE "transactions_attempted" > '9';
 
 -- Get the username and account balance of the 3 users with the highest balances,
 -- sort highest to lowest balance. NOTE: Research LIMIT
@@ -28,13 +29,13 @@ WHERE "username" LIKE '%a%';
 -- sort lowest to highest balance.
 
 
--- Get all users with account balances that are more than $100.
+-- Get all users with account balances that are more than $100.SELECT * FROM "accounts"
 
-
+WHERE "account_balance" > '100';
 
 -- Add a new record.
 
-
+INSERT INTO accounts (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('Martha', 'santa rosa', 20, 45, 868.42);
 
 -- The bank is losing money in Miami and Phoenix and needs to unload 
 -- low transaction customers: Delete users that reside in miami OR phoenix
