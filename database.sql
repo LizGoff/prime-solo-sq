@@ -24,7 +24,6 @@ WHERE "transactions_attempted" > '9';
 -- sort highest to lowest balance. NOTE: Research LIMIT
 
 
-
 -- Get the username and account balance of the 3 users with the lowest balances,
 -- sort lowest to highest balance.
 
